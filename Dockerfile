@@ -16,5 +16,5 @@ EXPOSE 3000 40000
 COPY --from=builder . /
 COPY --from=builder /go/bin/dlv /
 
-CMD ["air"]
 #CMD ["/dlv", "--headless", "--listen=:40000", "--api-version=2", "exec", "./tmp/goProject"]
+CMD ["air"]
